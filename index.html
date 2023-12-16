@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="" id="display">
+        <input type="text" id="show" value="" placeholder="0">
+        <br>
+        <input type="button" class="btn" id="symbol" value="Ac" onclick="display.show.value =' ' ">
+        <input type="button" class="btn" id="symbol" value="Del" onclick="display.show.value = display.show.value.toString().slice(0, -1) ">
+        <input type="button" class="btn" id="symbol" value="." onclick="display.show.value +='.' ">
+        <input type="button" class="btn" id="symbol" value="%" onclick="display.show.value +='%' ">
+        <br>
+        <input type="button" class="btn" value="1" onclick="display.show.value +='1' ">
+        <input type="button" class="btn" value="2" onclick="display.show.value +='2' ">
+        <input type="button" class="btn" value="3" onclick="display.show.value +='3' ">
+        <input type="button" class="btn" id="symbol" value="/" onclick="display.show.value +='/' ">
+        <br>
+        <input type="button" class="btn" value="4" onclick="display.show.value +='4' ">
+        <input type="button" class="btn" value="5" onclick="display.show.value +='5' ">
+        <input type="button" class="btn" value="6" onclick="display.show.value +='6' ">
+        <input type="button" class="btn" id="symbol" value="*" onclick="display.show.value +='*' ">
+        <br>
+        <input type="button" class="btn" value="7" onclick="display.show.value +='7' ">
+        <input type="button" class="btn" value="8" onclick="display.show.value +='8' ">
+        <input type="button" class="btn" value="9" onclick="display.show.value +='9' ">
+        <input type="button" class="btn" id="symbol" value="-" onclick="display.show.value +='-' ">
+        <br>
+        <input type="button" class="btn" value="00" onclick="display.show.value +='00' ">
+        <input type="button" class="btn" value="0" onclick="display.show.value +='0' ">
+        <input type="button" class="btn" id="equal" value="=" onclick="display.show.value = eval(display.show.value)">
+        <input type="button" class="btn" id="symbol" value="+" onclick="display.show.value +='+' ">
+        <br>
+    </form>
+    <!-- note explainastion in this calculater  -->
+    <!-- (1) display.show.value = display.show.value + '1'   -->
+    <!-- (1) display.show.value ma 1 asign kravisu/ add kri do -->
+
+    <!-- (2) = sign ma + nikadi daisu because + to aapde 1 j var lkhvanu che aetle + sign kadi nakhisu  -->
+
+    <!-- (3) += sign aetla mate ke aapde add krvanu che  -->
+
+
+    <!-- (4) ac pr click krvathi value empty thai jvi joiae khali  -->
+
+    <!-- (5)  evel su krse ke je drek vastune eveluate krse caluatestion krine aapi dese    -->
+
+    <!-- (6) toString string output aape che -->
+
+    <!-- (7) slice:- 1-> ae method che 
+     2-> slice method ma be parameter hoy che 
+     3-> slice method ae string pr kam kre che 
+     4-> static parameter / end parameter aa be slice ma parameter hoy che 
+     5-> kya number thi string joiae che ae pelu 
+     6-> ketla index no thi string joiae che ae 
+     7-> for ex.---  nisarg to 0 thi 4 sudhi lese > 
+     8-> starting index and end indexpn joise 
+    -->
+
+</body>
+
+</html>
